@@ -3,7 +3,7 @@
 *Overview*
 This repository contains a Java source code that demonstrates the use of multiple datasources within a single Spring Boot App. 
 The application uses the following technologies:
-- Java 21
+- Java 17
 - Spring Boot 3.2.5
 - Gradle 8.8
 - 2x PostgreSQL Databases
