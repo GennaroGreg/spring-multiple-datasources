@@ -1,4 +1,4 @@
-# Strategic Solutions Multi DB Concept
+# Sample Multi DB Concept
 
 *Overview*
 This repository contains a Java source code that demonstrates the use of multiple datasources within a single Spring Boot App. 
