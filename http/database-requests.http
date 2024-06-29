@@ -1,0 +1,51 @@
+### Save Pet
+POST http://localhost:8080/pet
+Content-Type: application/json
+
+{
+  "pet_name": "Cody",
+  "pet_type": "Dog",
+  "breed": "Pitbull",
+  "age": 8
+}
+    
+### Save Contact
+POST http://localhost:8080/contact
+Content-Type: application/json
+
+{
+  "contact_name": "Percy the Pup",
+  "phone": "555-123-4567",
+  "email": "percy.pup@example.com",
+  "address": "123 Happy Guy Lane, Bevery Grove CA, 90048"
+}
+
+### Save Character
+POST http://localhost:8080/character
+Content-Type: application/json
+
+{
+  "name": "Dr. Bell",
+  "tvShowName": "The Resident",
+  "main": false,
+  "villain": false,
+  "hero": true
+}
+
+### Get Pets
+GET http://localhost:8080/pet
+
+### Get Contacts
+GET http://localhost:8080/contact
+
+### Get Characters
+GET http://localhost:8080/character
+
+### Delete Pet by ID
+DELETE http://localhost:8080/pet/{id}
+
+### Delete Contact by ID
+DELETE http://localhost:8080/contact/{id}
+
+### Delete Character by ID
+DELETE http://localhost:8080/character/{id}

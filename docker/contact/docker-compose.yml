@@ -1,0 +1,29 @@
+version: '3.5'
+
+services:
+  postgres-contact:
+    image: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - pg-dataset-contact:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: pet
+
+  pgadmin-contact:
+    image: dpage/pgadmin4
+    depends_on:
+      - postgres-contact
+    ports:
+      - "9999:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: pgadmin
+    volumes:
+      - pgadmin-data-contact:/var/lib/pgadmin
+
+volumes:
+  pg-dataset-contact:
+  pgadmin-data-contact:
